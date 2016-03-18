@@ -1,23 +1,18 @@
-[中文介绍](https://github.com/coolhihi/gnpt/blob/master/README.zh-cn.md)
-
 # Introduction
 
-Gxx New Project Template
-
-It is a front-end workbench, it easy start a new project. Initialize with gulp and node server. So you can start to code and debug at once.
-
-# Feature
-
-1. sass support (common.scss is the main style file)
-2. typescript support
-3. js uglify
-4. font auto copy to dist
-5. img auto copy to dist (compress can be enable)
-6. run an http server with gulp
-7. livereload support
+A promise demo for teaching
 
 # Installation
 
-    $ git clone https://github.com/coolhihi/gnpt.git
+    $ git clone https://github.com/coolhihi/promise-demo-es6.git
+    $ cd 
     $ npm install
     $ npm start
+
+# View
+
+* visit [http://127.0.0.1:8081/](http://127.0.0.1:8081/)
+
+* read my blog: [http://blog.gxxsite.com/promise-es6-lesson-with-gulp-demo/](http://blog.gxxsite.com/promise-es6-lesson-with-gulp-demo/)
+
+* edit file index.html set example for 1 to 5

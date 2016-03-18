@@ -14,7 +14,8 @@ var gulp = require('gulp'),
     ts = require('gulp-typescript'),
     watch = require('gulp-watch'),
     server = require('gulp-develop-server'),
-    del = require('del');
+    del = require('del'),
+    babel = require('gulp-babel');
 // server
 gulp.task( 'server:start', function() {
     server.listen( { path: './server.js' } );
@@ -52,6 +53,10 @@ gulp.task('ts', function(){
       noImplicitAny: true
     }))
     .on('error',notify.onError(function (error) {return 'Ts error!'}))
+    .pipe(babel({
+        presets: ['es2015']
+    }))
+    .on('error',notify.onError(function (error) {return 'Ts error!'}))
     .pipe(gulp.dest('dist/js'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
@@ -61,6 +66,10 @@ gulp.task('ts', function(){
 });
 gulp.task('js', function() {
   return gulp.src('src/js/*.js')
+    .pipe(babel({
+        presets: ['es2015']
+    }))
+    .on('error',notify.onError(function (error) {return 'Js error!'}))
     //.pipe(concat('main.js'))
     .pipe(gulp.dest('dist/js'))
     .pipe(rename({ suffix: '.min' }))

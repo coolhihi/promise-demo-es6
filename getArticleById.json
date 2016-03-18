@@ -1,0 +1,9 @@
+{
+  "Result": 200,
+  "Data": {
+    "id": 10001,
+    "title": "来自文章对象的标题",
+    "content": "来自文章对象的内容",
+    "categoryid": 3
+  }
+}

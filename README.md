@@ -5,7 +5,7 @@ A promise demo for teaching
 # Installation
 
     $ git clone https://github.com/coolhihi/promise-demo-es6.git
-    $ cd 
+    $ cd promise-demo-es6
     $ npm install
     $ npm start
 
@@ -15,4 +15,4 @@ A promise demo for teaching
 
 * read my blog: [http://blog.gxxsite.com/promise-es6-lesson-with-gulp-demo/](http://blog.gxxsite.com/promise-es6-lesson-with-gulp-demo/)
 
-* edit file index.html set example for 1 to 5
+* edit file index.html set example form 1 to 5
